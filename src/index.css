@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: poppins;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+     --bg_color:#d6e1b6;
+     --second_color:#fad6be;
+     --therd_color:#faa96b;
+     --forth_color:#f5f4f5;
+     --button:#1d1e1e;
+     --cart_color:#b73b52;
+     --signForm:#cbd7d1;
+     --blue:#749cb5;
+     --golden:#f3c331;
+     --dark:#1d1e1e;
+     --gray:#606868;
+     --undergray:#95a1a1;
+     --blueunder:#cbd7d1;
+     --purple:#bab8f3;
+     --highGray:#4c4c4d;
+ }
+
+:root{
+    --bg_color:linear-gradient(to left,black,rgb(12, 1, 49));
+    --text_color:aliceblue;
+    --Btn__text:#fff;
+    --Btn_bga:#e2b901;
+    --border:#fff;
+    --Btn_bga_color:#fff;
+    --border:white;
+    --Menu-mobile:linear-gradient(to left,black,rgb(12, 1, 49));
+    --linColor:#fff;
+    --shadows:#19054b;
+    
+    
+
+
+}
+body{
+    background: var(--bg_color);
+    color: var(--text_color);
+
+}
+
+[BackGroundColor="Light"]{
+    --bg_color:aliceblue;
+    --text_color:rgb(6, 7, 7);
+    --Btn__text:#070707;
+    --border:#000000;
+    --Btn_bga:#db8d17;
+    --Btn_bga_color:#050505;
+    --border:black;
+    --Menu-mobile:linear-gradient(to left,rgb(255, 255, 255),#ffffff);
+    --linColor:#000;
+    --shadows:#021a1b49;
+
+}
+button{
+    
+    width: 150px;
+    height: 35px;
+    background-color: var(--Btn_bga_color);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: var(--Btn_bga);
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 700;
+
+}

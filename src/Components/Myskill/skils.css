@@ -1,0 +1,163 @@
+.about__mySkill {
+    margin: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+   
+
+
+}
+
+.about__mySkill h2 {
+    font-size: 30px;
+    padding: 30px 0 10px 0;
+    border-bottom: solid 3px var(--text_color);
+    width: 40%;
+}
+
+.about__mySkill p {
+    padding: 20px 0;
+}
+
+.about__skill {
+    padding: 10px 0;
+}
+
+.line {
+    width: 70%;
+    height: 10px;
+    background-color: var(--border);
+    border-radius: 10px;
+    margin-top: 10px;
+    position: relative;
+
+
+}
+
+.expressIcon {
+    color: black;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.reactIcon {
+    color: skyblue;
+}
+
+.nodeIcon {
+    color: green;
+}
+
+.line:hover {
+    background-color: rgb(252, 251, 244);
+    cursor: pointer;
+}
+
+.magicpattern {
+    display: flex;
+    gap: 10px;
+}
+
+.line::after {
+    position: absolute;
+    content: '';
+    background: var(--linColor);
+    width: 80%;
+    height: 7px;
+    margin-top: 1px;
+    border-radius: 0 10px 10px 0;
+}
+
+.about__skillwrapper .about__skill:nth-of-type(1) .line::after {
+    width: 59%;
+    background-color: green;
+}
+
+.about__skillwrapper .about__skill:nth-of-type(2) .line::after {
+    width: 69%;
+    background-color: black;
+}
+
+.about__skillwrapper .about__skill:nth-of-type(3) .line::after {
+    width: 69%;
+    background-color: rgb(26, 141, 218);
+}
+
+.about__skillwrapper .about__skill:nth-of-type(4) .line::after {
+    width: 94%;
+    background-color: rgb(89, 146, 2);
+}
+
+.about__image {
+    position: relative;
+
+}
+
+.about__exp {
+    width: 150px;
+    height: 150px;
+    background: var(--bg_color);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px rgba(245, 223, 97, 0.993);
+    margin-top: 180px;
+
+
+
+}
+
+.about__exp h3 {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    transform: rotate(-30deg);
+
+
+}
+
+.about__exp h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:607px) {
+    .about__mySkill {
+        flex-direction: column;
+        align-items: center;
+        /* gap: 10px 0; */
+
+
+    }
+
+    .line {
+        width: 100%;
+    }
+
+    .about__exp {
+        margin-top: 20px;
+    }
+
+    .about__mySkill h2 {
+        width: 100%;
+    }
+
+    .about__mySkill {
+        font-size: 14px;
+    }
+
+    .about__mySkill h2 {
+        font-size: 20px;
+    }
+}

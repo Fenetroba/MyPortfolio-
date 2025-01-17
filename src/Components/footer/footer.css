@@ -1,0 +1,26 @@
+.footer{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 40px 10px;
+     box-shadow: 0 0 10px var(--shadows);
+     gap: 30px;
+     flex-wrap: wrap;
+}
+.footer_right input{
+ width: 80%;
+ border: none;
+ outline: none;
+ padding: 10px 10px;
+ background: linear-gradient(145deg, #ffffff,#7fa1ac);
+ box-shadow: 35px 35px 70px var(--shadows),
+      -35px -35px 70px var(--shadows);
+      margin-top: 10px;
+      font-weight: bolder;
+
+}
+.footer_btn{
+     margin-top: 20px;
+     width: 84%;
+     padding: 7px 10px;
+}
