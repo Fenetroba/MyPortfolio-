@@ -33,8 +33,8 @@ const Header = () => {
         <div className="header__social">
 <ul class="example-2">
   <li class="icon-content">
-    <a
-      href="https://linkedin.com/"
+    <a target="_blank"
+      href="https://www.linkedin.com/in/fenet-roba/"
       aria-label="LinkedIn"
       data-social="linkedin"
     >
@@ -57,7 +57,7 @@ const Header = () => {
     <div class="tooltip">LinkedIn</div>
   </li>
   <li class="icon-content">
-    <a href="https://www.github.com/" aria-label="GitHub" data-social="github">
+    <a href="https://www.github.com/" aria-label="GitHub" data-social="github" target="_blank">
       <div class="filled"></div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -81,6 +81,7 @@ const Header = () => {
       href="https://www.instagram.com/"
       aria-label="Instagram"
       data-social="instagram"
+      target="_blank"
     >
       <div class="filled"></div>
       <svg
@@ -108,7 +109,7 @@ const Header = () => {
         </div>
         <button>
         
-          <a href={cv} download> Download CV <RiDownload2Fill style={{color:"gole"}}/> </a>
+          <a href={cv} download="pdf"> Download CV <RiDownload2Fill style={{color:"gole"}}/> </a>
 
 
         </button>

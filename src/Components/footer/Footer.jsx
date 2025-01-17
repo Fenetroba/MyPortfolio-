@@ -20,10 +20,10 @@ const Footer = () => {
         <p>Call me or send me a message; I am happy to work with you.</p>
         <input type="email" className="footer_email" placeholder='Text me' />
         <button className='footer_btn' onClick={handleSendEmail}>Send</button>
+        <FaPhone /><span><a href="tel:+251905420124">+251905420124</a></span>
       </div>
       <div className="footer_left">
         <img src={bottom} alt="sphere_3d_shape" style={{ width: '200px', height: '200px' }} />
-        <FaPhone /><span><a href="tel:+251905420124">+251905420124</a></span>
       </div>
     </div>
   );
