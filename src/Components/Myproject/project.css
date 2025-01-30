@@ -1,5 +1,5 @@
 .Projects {
-     min-height: 100vh;
+    margin: 80px 0;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -19,8 +19,35 @@
      margin-top: 50px;
 }
 
-/* From Uiverse.io by Smit-Prajapati */
-.card {
+@keyframes fadeIn {
+     from {
+       opacity: 0;
+       transform: translateY(30px);
+     }
+     to {
+       opacity: 1;
+       transform: translateY(0);
+     }
+   }
+   
+   .card {
+     animation: fadeIn 0.9s ease forwards;
+     opacity: 0; /* Start with the card hidden */
+   }
+   
+   .card:nth-child(1) {
+     animation-delay: 0.2s;
+   }
+   
+   .card:nth-child(2) {
+     animation-delay: 0.3s;
+   }
+   
+   .card:nth-child(3) {
+     animation-delay: 0.4s;
+   }
+
+.card:nth-child(2){
      width: 300px;
      height: 200px;
      background: #02344b;
@@ -30,7 +57,32 @@
      border-radius: 10px;
      overflow: hidden;
      transition: all 0.5s ease-in-out;
-     background: url('../Asset/smart.jpeg');
+     background: url('../Asset/project1.png') no-repeat center center/cover;
+}
+.card:nth-child(3){
+     width: 300px;
+     height: 200px;
+     background: #02344b;
+  
+     position: relative;
+     display: grid;
+     place-content: center;
+     border-radius: 10px;
+     overflow: hidden;
+     transition: all 0.5s ease-in-out;
+     background: url('../Asset/onaway.png') no-repeat center center/cover;
+}
+.card{
+     width: 300px;
+     height: 200px;
+     background: #02344b;
+     position: relative;
+     display: grid;
+     place-content: center;
+     border-radius: 10px;
+     overflow: hidden;
+     transition: all 0.5s ease-in-out;
+     background: url('../Asset/secode.png') no-repeat center center/cover;
 }
 
 #logo-main,
@@ -53,6 +105,7 @@
      position: absolute;
      inset: 0px;
      border: 2px solid #faa70c;
+     backdrop-filter: blur(2px);
      opacity: 0;
      transform: rotate(10deg);
      transition: all 0.5s ease-in-out;
@@ -112,8 +165,8 @@
      left: 50%;
      top: 50%;
      transform: translate(-50%, -50%);
-     margin-top: 30px;
-     color: #030303;
+     
+     color: #fff;
      padding-left: 8px;
      font-size: 14px;
      font-weight: bolder;

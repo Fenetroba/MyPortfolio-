@@ -73,3 +73,17 @@ gap: 30px;
           font-size: 20px;
      }
 }
+.your-component {
+     opacity: 0; /* Start invisible */
+     transform: translateY(30px); /* Slightly move down */
+     transition: opacity 1s ease, transform 0.5s ease; /* Smooth transition */
+ }
+ 
+ .fade-in {
+     opacity: 1; /* Make visible */
+     transform: translateY(0); /* Move back to original position */
+ }
+ 
+ .fade-out {
+     opacity: 0; /* Keep invisible */
+ }

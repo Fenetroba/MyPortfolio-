@@ -19,118 +19,21 @@
     padding: 20px 0;
 }
 
-.about__skill {
-    padding: 10px 0;
-}
-
-.line {
-    width: 70%;
-    height: 10px;
-    background-color: var(--border);
-    border-radius: 10px;
-    margin-top: 10px;
+.Skills_skils{
+    display: flex;
+    justify-content: center;
+  
     position: relative;
-
-
-}
-
-.expressIcon {
-    color: black;
-    width: 30px;
-    height: 30px;
-    padding: 5px;
-    background-color: white;
-    border-radius: 50%;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.reactIcon {
-    color: skyblue;
-}
-
-.nodeIcon {
-    color: green;
-}
-
-.line:hover {
-    background-color: rgb(252, 251, 244);
-    cursor: pointer;
-}
-
-.magicpattern {
-    display: flex;
-    gap: 10px;
-}
-
-.line::after {
-    position: absolute;
-    content: '';
-    background: var(--linColor);
-    width: 80%;
-    height: 7px;
-    margin-top: 1px;
-    border-radius: 0 10px 10px 0;
-}
-
-.about__skillwrapper .about__skill:nth-of-type(1) .line::after {
-    width: 59%;
-    background-color: green;
-}
-
-.about__skillwrapper .about__skill:nth-of-type(2) .line::after {
-    width: 69%;
-    background-color: black;
-}
-
-.about__skillwrapper .about__skill:nth-of-type(3) .line::after {
-    width: 69%;
-    background-color: rgb(26, 141, 218);
-}
-
-.about__skillwrapper .about__skill:nth-of-type(4) .line::after {
-    width: 94%;
-    background-color: rgb(89, 146, 2);
-}
-
-.about__image {
-    position: relative;
-
-}
-
-.about__exp {
-    width: 150px;
-    height: 150px;
-    background: var(--bg_color);
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0 8px rgba(245, 223, 97, 0.993);
-    margin-top: 180px;
-
-
-
-}
-
-.about__exp h3 {
-    text-align: center;
-    padding: 20px;
-    font-size: 16px;
-    transform: rotate(-30deg);
-
-
-}
-
-.about__exp h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   gap: 30px;
     flex-wrap: wrap;
+    min-height:250px ;
+
+   
+    
 }
+
+
 
 @media screen and (max-width:607px) {
     .about__mySkill {
@@ -161,3 +64,144 @@
         font-size: 20px;
     }
 }
+/* General Styles */
+.skills-section {
+    padding: 20px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    
+  }
+  
+  .skills-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #2c3e50;
+    
+  }
+  
+  
+  
+  .skill {
+    background: linear-gradient(145deg, #bbc2eb, #076b7c);
+    box-shadow:  18px 18px 24px var(var(--shadows)),
+                 -18px -18px 24px var(--shadows);
+    /* padding: 20px; */
+    border-radius: 10px;
+  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  .skill-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    
+  }
+  
+  .skill-bar {
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+    
+  }
+  
+  .skill-level {
+    background: #20064b;
+    height: 100%;
+    border-radius: 2px;
+    width: 0;
+    transition: width 2s ease;
+    
+  }
+  /* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  /* Dropdown button */
+  .btn-secondary {
+    background-color: #dba134; /* Blue background */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: 2s;
+    
+  }
+  
+  .btn-secondary:hover {
+    background-color: #eec476; 
+    
+
+  }
+  
+  /* Dropdown menu */
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Hidden by default */
+    min-width: 200px;
+    z-index: 1000;
+
+    
+   
+   
+  }
+  
+  /* Show dropdown menu when active */
+  .dropdown:hover .dropdown-menu{
+    display: block;
+    
+    
+  }
+  
+  /* Dropdown items */
+  .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f1f1f1; /* Light gray on hover */
+    color: #3498db; /* Blue text on hover */
+    
+  }
+  
+  /* Dropdown arrow */
+  .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+    content: "▼"; /* Custom arrow */
+    font-size: 12px;
+    
+  }
