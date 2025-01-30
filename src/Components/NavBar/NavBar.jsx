@@ -1,6 +1,6 @@
 // Navbar.jsx
 import React, { useState } from "react";
-import "./Navbar.css"; // Make sure to create this CSS file
+import "./navBar.css"; // Make sure to create this CSS file
 import {FaMoon}from 'react-icons/fa'
 import {RiMenu3Line}from 'react-icons/ri'
 const Navbar = () => {

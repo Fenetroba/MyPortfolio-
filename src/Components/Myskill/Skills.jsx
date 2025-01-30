@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import "../Myskill/skils.css";
+import "./skils.css";
 
 const Skills = () => {
   const skillRefs = useRef([]);
