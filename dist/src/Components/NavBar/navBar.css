@@ -2,6 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    transition: 2s;
 }
 
 .navbar {
@@ -34,6 +35,7 @@ body {
     color: var(--golden);
     font-size: 34px;
     font-weight: 900;
+    z-index: 1000;
 }
 
 .nav-links {
@@ -110,6 +112,7 @@ body {
     background: var(--Btn_bga);
     border-radius: 50%;
     background-color: rgba(17, 73, 95, 0.788);
+   
 }
 
 

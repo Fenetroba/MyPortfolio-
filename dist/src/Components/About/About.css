@@ -38,9 +38,30 @@ gap: 30px;
 .nodeIcon {
      font-size: 40px;
 }
-
+.magicpattern{
+     background-color: gold;
+}
 .mongoicon {
      color: green;
+}
+.expressIcon {
+     color: rgb(8, 8, 8);
+}
+.reactIcon {
+     color: rgb(12, 136, 207);
+}
+.nodeIcon {
+     color: green;
+}
+@media screen and (max-width:1100px) {
+     .ABout_contener_right img{
+          width: 400px;
+     }
+}
+@media screen and (max-width:855px) {
+     .ABout_contener_right img{
+          width: 300px;
+     }
 }
 
 @media screen and (max-width:607px) {

@@ -5,6 +5,7 @@ import Header from "./Components/header/Header";
 import Project from "./Components/Myproject/Project";
 import Skills from "./Components/Myskill/Skills";
 import Navbar from "./Components/NavBar/NavBar";
+import  {} from "react-smooth"
 function App() {
 
   return (

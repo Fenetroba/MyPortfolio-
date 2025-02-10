@@ -1,5 +1,5 @@
 import React from 'react';
-import '../footer/footer.css';
+import './footer.css';
 import bottom from '../Asset/bottom.avif';
 import { FaPhone } from 'react-icons/fa6';
 

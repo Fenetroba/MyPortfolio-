@@ -1,9 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
-import "../About/About.css";
-import smart from '../Asset/smart.jpeg'
+import "./About.css";
+import smart from '../Asset/about.jpg'
 import { FaNodeJs, FaReact } from "react-icons/fa";
 import { RiDatabase2Line } from "react-icons/ri";
 import { SiExpress, SiMongodb } from "react-icons/si";
+import { TypeAnimation } from 'react-type-animation';
 const About = () => {
 
   const [isVisible, setIsVisible] = useState(false);
@@ -30,11 +31,13 @@ const About = () => {
       };
   }, []);
   return (
+    
     <div className="about">
+    
       <div className="ABout_contener_left">
         <h1>About Me</h1>
         <p className={`your-component ${isVisible ? 'fade-in' : 'fade-out'}`} ref={ref}>
-          I’m a passionate <span>MERN stack developer</span> who loves working
+          I’m a passionate <span>[Full Stack]MERN stack developer</span> who loves working
           with MongoDB, Express.js, React.js, and Node.js. Building dynamic and
           responsive web applications is what I enjoy most, as it allows me to
           create seamless user experiences. With a solid background in
@@ -45,7 +48,7 @@ const About = () => {
         </p>
       </div>
       <div className="ABout_contener_right" id="About">
-        <h1 className="imyIdentity"> Smart Worker GreterThan Hard Worker</h1>
+        <h1 className="imyIdentity"> I Am smart Worker</h1>
         <img src={smart} alt="" />
 
         <div className="magicpattern">
