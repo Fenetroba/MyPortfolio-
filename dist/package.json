@@ -11,8 +11,10 @@
     "test": "jest",
     "format": "prettier --write .",
     "clean": "rimraf dist",
-    "start": "vite",
-    "deploy": "gh-pages -d dist"
+    "start": "vite preview",
+    "deploy": "gh-pages -d dist",
+    "postinstall": "npm run build",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.0",
