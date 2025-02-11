@@ -6,7 +6,6 @@
      display: flex;
     gap: 20px;
      align-items: center;
-     flex-wrap: wrap;
      height: 60vh;
 
 }
@@ -681,5 +680,12 @@
     }
     .sevece_contener h1{
       font-size: 20px;
+      margin: 20px 0;
     }
+    .My_services{
+      display: flex;
+    flex-direction: column;
+    height: 100vh;
+ 
+ }
    }

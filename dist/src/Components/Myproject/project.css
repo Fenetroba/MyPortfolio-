@@ -244,6 +244,11 @@
           opacity: 0;
      }
 }
-@media screen and (max-width:1000px) {
-
+@media screen and (max-width:600px) {
+     .Projectcard{
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+          
+     }
 }

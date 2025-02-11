@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./navBar.css"; // Make sure to create this CSS file
 import {FaMoon}from 'react-icons/fa'
 import {RiMenu3Line}from 'react-icons/ri'
-import Sider from "../sider/Sider";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
