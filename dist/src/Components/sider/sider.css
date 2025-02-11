@@ -1,9 +1,0 @@
-.sider_contener{
-     position: fixed;
-     right: 0;
-     top: 100px;
-     background-color: goldenrod;
-     width: 2000px;
-     height: 100vh;
-     z-index: 8888888;
-}
