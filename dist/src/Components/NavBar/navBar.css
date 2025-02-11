@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    transition: 2s;
+    transition: 0.5s ease
 }
 
 .navbar {
@@ -22,7 +22,7 @@ body {
     width: 100%;
     top: 0;
     background: var(--bg_color);
-
+position: fixed;
     transition: 2s;
     box-shadow: 0 0 10px var(--Btn__text);
 
@@ -163,6 +163,7 @@ body {
         top: 3px;
       }
 }
+
 
 /* For larger screens, show nav links normally */
 @media (min-width: 601px) {

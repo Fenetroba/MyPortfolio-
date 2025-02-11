@@ -36,6 +36,9 @@ html{
     --Menu-mobile:linear-gradient(to left,black,rgb(12, 1, 49));
     --linColor:#fff;
     --shadows:#19054b;
+    --servicecard1:#1a1a1a;
+    --servicecar2:#290e88;
+    
     
     
 
@@ -44,11 +47,13 @@ html{
 body{
     background: var(--bg_color);
     color: var(--text_color);
-
+    
 }
 
 [BackGroundColor="Light"]{
-    --bg_color:aliceblue;
+    --servicecard2:rgb(252, 244, 244);
+    --servicecard1:rgb(205, 227, 247);
+    --bg_color:rgb(223, 240, 255);
     --text_color:rgb(6, 7, 7);
     --Btn__text:#070707;
     --border:#000000;

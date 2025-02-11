@@ -83,7 +83,7 @@
   
   
   .skill {
-    background: linear-gradient(145deg, #bbc2eb, #076b7c);
+    background: linear-gradient(145deg, #edeff8, #076b7c);
     box-shadow:  18px 18px 24px var(var(--shadows)),
                  -18px -18px 24px var(--shadows);
     /* padding: 20px; */
@@ -115,7 +115,7 @@
   }
   
   .skill-level {
-    background: #20064b;
+    background: #000c2c;
     height: 100%;
     border-radius: 2px;
     width: 0;

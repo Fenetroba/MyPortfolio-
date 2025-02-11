@@ -1,8 +1,8 @@
-// Navbar.jsx
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./navBar.css"; // Make sure to create this CSS file
 import {FaMoon}from 'react-icons/fa'
 import {RiMenu3Line}from 'react-icons/ri'
+import Sider from "../sider/Sider";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -26,14 +26,22 @@ const Navbar = () => {
 
   const changeColor = () => {
     let Body = document.querySelector("body").getAttribute("BackGroundColor");
+
     if (Body === "Light") {
       darkColore();
-      
     } else {
       LightColore();
+     
+      
+     
     }
   };
- 
+  
+
+
+  
+
+   
   return (
     <nav className="navbar" id="toper">
       <div className="logo">Fena </div>
@@ -51,6 +59,9 @@ const Navbar = () => {
           <li>
             <a href="#Contact">Contact Me</a>
           </li>
+          <li>
+            <a href="#Services">Services</a>
+          </li>
           
        
         </ul>
@@ -67,6 +78,7 @@ const Navbar = () => {
           className="body__britness"
           onClick={changeColor}
         />
+            
             
       </div>
     </nav>

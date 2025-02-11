@@ -51,14 +51,13 @@
  }
 
  .TopSider{
-  height: 30%;
-  width: 40%;
-  border-radius: 20%;
-  background-color: var(--border);
+  
+
+  border: rgb(141, 255, 35) solid 1px;
   z-index: 1000;
   position: absolute;
-  top: -50px;
-  left: -10px;
+  top: 100px;
+  left: 20px;
   display: flex;
   align-items: end;
   justify-content: end;
@@ -207,6 +206,8 @@ ul {
      .heade__contener p{
          font-size: 24px;
      }
- 
+ .TopSider{
+  display: none;
+ }
  }
  

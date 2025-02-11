@@ -33,7 +33,7 @@ const Project = () => {
           <div className="border"></div>
           <div className="content">
             <span className="logo-bottom-text">
-              <a href="https://ecommerceproject-1-paae.onrender.com" target="_blank">
+              <a href="https://ecommerceprojects.onrender.com" target="_blank">
                 <img
                   src="https://cdn-icons-png.flaticon.com/128/455/455691.png"
                   alt="Link"

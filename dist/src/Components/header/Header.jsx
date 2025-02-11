@@ -1,5 +1,5 @@
 import React from "react";
-import pictures from "../Asset/Fenet roba2.png";
+import pictures from "../Asset/top.jpg";
 import "./header.css";
 import cv from "../Asset/resume.pdf";
 import { TypeAnimation } from 'react-type-animation';
@@ -23,7 +23,7 @@ const Header = () => {
       ]}
       wrapper="span"
       speed={5}
-      style={{ fontSize: '1.5rem',textAlign:'center', fontWeight:'600'}}
+      style={{ fontSize: '2rem',textAlign:'center', fontWeight:'600', }}
       repeat={Infinity}
     />
 
@@ -32,7 +32,7 @@ const Header = () => {
         <img
           src={pictures}
           alt="mypicture"
-          style={{ width: "200px", height: "200px" }}
+          style={{ width: "270px", height: "270px" }}
         />
 
         <h1>
